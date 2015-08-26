@@ -1,0 +1,21 @@
+{
+  "name": "wave-decorator",
+  "version": "0.0.1",
+  "homepage": "/",
+  "authors": [
+    "zopelee@gmail.com"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "pixi.js": "pixi#~3.0.7",
+    "wavesurfer.js": "~1.0.30"
+  }
+}

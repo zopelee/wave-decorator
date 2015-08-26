@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>wavesurfer.js</title>
+
+    <link href="data:image/gif;" rel="icon" type="image/x-icon" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="bower_components/wavesurfer.js/example/css/style.css" />
+    <link rel="stylesheet" href="bower_components/wavesurfer.js/example/css/ribbon.css" />
+
+    <script src="bower_components/pixi.js/bin/pixi.min.js"></script>
+    <script src="bower_components/wavesurfer.js/dist/wavesurfer.min.js"></script>
+    <script src="src/drawer.canvas.pixi.js"></script>
+
+    <!-- regions plugin -->
+    <script src="bower_components/wavesurfer.js/plugin/wavesurfer.regions.js"></script>
+
+    <script src="src/setting.js"></script>
+
+    <!-- Demo -->
+    <script src="example/main.js"></script>
+    <script src="example/trivia.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="?fill">Fill</a></li>
+          <li><a href="?scroll">Scroll</a></li>
+        </ul>
+
+        <h1 itemprop="name">&nbsp;</h1>
+      </div>
+
+      <div id="demo">
+        <div id="waveform">
+          <div class="progress progress-striped active" id="progress-bar">
+            <div class="progress-bar progress-bar-info"></div>
+          </div>
+
+          <!-- Here be the waveform -->
+        </div>
+
+        <div class="controls">
+          <button class="btn btn-primary" data-action="back">
+            <i class="glyphicon glyphicon-step-backward"></i>
+            Backward
+          </button>
+
+          <button class="btn btn-primary" data-action="play">
+            <i class="glyphicon glyphicon-play"></i>
+            Play
+            /
+            <i class="glyphicon glyphicon-pause"></i>
+            Pause
+          </button>
+
+          <button class="btn btn-primary" data-action="forth">
+            <i class="glyphicon glyphicon-step-forward"></i>
+            Forward
+          </button>
+
+          <button class="btn btn-primary" data-action="toggle-mute">
+            <i class="glyphicon glyphicon-volume-off"></i>
+            Toggle Mute
+          </button>
+        </div>
+      </div>
+
+      <p class="lead pull-center" id="drop">
+        Drag'n'drop your favorite
+        <i class="glyphicon glyphicon-music"></i>-file
+        here!
+      </p>
+
+      <div class="footer row">
+
+        <div class="col-sm-12">
+          <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a>
+        </div>
+
+        <div class="col-sm-7">
+          <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">wavesurfer.js</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/katspaugh/wavesurfer.js" property="cc:attributionName" rel="cc:attributionURL">katspaugh</a> is licensed under a&nbsp;<a style="white-space: nowrap" rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
+        </div>
+
+        <div class="col-sm-5">
+          <noindex>
+            Demo music track is <a href="http://www.jamendo.com/en/track/661578/trou" rel="nofollow"><b>Trou</b> <span class="muted">by</span>&nbsp;<b>czskamaarù</b></a>. Thanks!
+          </noindex>
+        </div>
+        <div class="col-sm-12">
+          <div class="row">
+            <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
