@@ -38,24 +38,10 @@ function render() {
 
 function calcY(x, t, offset) {
   return aFac(t * offset) * Math.sin(offset * opt.wave.noise1 * (x + (offset - 0.5) * t * opt.wave.noise2))
-//  return aFac(t) * Math.sin(bFac(t) * offset * 1 * (x + cFac(t) + offset))
 }
 
-function aFac(t) {
+function aFac(x) {
   var range = opt.wave.aFac.range
   var speed = opt.wave.aFac.speed
-  return range * Math.sin(speed * t)
-//  return 50
-}
-function bFac(t) {
-//  return 0.1 * Math.sin(0.01 * t)
-//  return 0.0000001 * t
-//  return 0.05
-//  return Math.random() * 0.1
-}
-function cFac(t) {
-//  return 100 * Math.sin(0.0001 * t)
-//  return 0.1 * t
-//  return Math.random() * 100
-//  return 0
+  return range * Math.sin(speed * x)
 }
