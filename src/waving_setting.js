@@ -3,21 +3,48 @@ var WavingSetting = {
     width: 1024,
     height: 300,
   },
+  waveCount: 30,
   wave: {
-    tag: 'wave',
-    color: 0xCCCCCC,
-    opacity: 1,
+    layers: [
+      {
+        color: 0x000000,
+        opacity: 0.1,
+        ratio: 1,
+      },
+      {
+        color: 0x000000,
+        opacity: 0.2,
+        ratio: 0.5,
+      },
+      {
+        color: 0x000000,
+        opacity: 0.3,
+        ratio: 0.3,
+      },
+      {
+        color: 0x000000,
+        opacity: 0.4,
+        ratio: 0.2,
+      },
+      {
+        color: 0x000000,
+        opacity: 0.5,
+        ratio: 0.1,
+      },
+    ],
     aFac: {
-      range: 30,
+      range: 20,
       speed: 0.01,
     },
-    noise1: 0.2,
+    aveHeight: 20,
+    noise1: 0.8,
     noise2: 0.1,
-  },
-  innerWave: {
-    tag: 'innerWave',
-    color: 0x000000,
-    opacity: 0.3,
-    ratio: 0.5,
+    amp: {
+      fold: 2.3,
+      span: 0.000001,
+      slideX: 100,
+      slideRange: 600,
+      slideSpeed: 0.0003,
+    },
   },
 }
