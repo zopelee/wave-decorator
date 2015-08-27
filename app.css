@@ -1,0 +1,10 @@
+.header, .footer, #demo, #drop{
+  /*display: none;*/
+}
+
+.waving_canvas_wrapper{
+  width: 100%;
+}
+#waving_canvas{
+  width: 100%;
+}

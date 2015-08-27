@@ -124,9 +124,9 @@ WaveSurfer.util.extend(WaveSurfer.Drawer.Canvas, {
 //        cc.lineStyle(10, 0xee82ee, 0.8);
       var fillTargets;
       if (cc === this.waveCc) {
-        fillTargets = [Setting.wave, Setting.innerWave]
+        fillTargets = [WavesurferSetting.wave, WavesurferSetting.innerWave]
       } else {
-        fillTargets = [Setting.progress]
+        fillTargets = [WavesurferSetting.progress]
       }
 
       fillTargets.forEach(function (tgt) {
@@ -149,7 +149,7 @@ WaveSurfer.util.extend(WaveSurfer.Drawer.Canvas, {
             var halfShpHeights = global_textures.map(function (tex) {
               return tex.height / 2
             })
-            shpScale = (maxHeight * Setting.shapeMapping.scaleFactor) / Math.max.apply(null, halfShpHeights)
+            shpScale = (maxHeight * WavesurferSetting.shapeMapping.scaleFactor) / Math.max.apply(null, halfShpHeights)
             halfShpHeights = halfShpHeights.map(function (h) {
               return h * shpScale
             })
@@ -190,7 +190,7 @@ WaveSurfer.util.extend(WaveSurfer.Drawer.Canvas, {
             //        console.log(i + ' * ' + scale + ' + ' + $)
             cc.lineTo(i * scale + $, halfH - h + offsetY);
             if (tgt.tag === 'wave') {
-              if (h >= minHalfShpHeight * Setting.shapeMapping.heightFactor) {
+              if (h >= minHalfShpHeight * WavesurferSetting.shapeMapping.heightFactor) {
                 var shpIndex = tmpShps.indexOf(tmpShps.reduce(function (a, b) {
                   return Math.abs(a.height / 2 - h) < Math.abs(b.height / 2 - h) ? a : b
                 }))

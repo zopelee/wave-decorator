@@ -1,4 +1,4 @@
-var Setting = {
+var WavesurferSetting = {
   wave: {
     tag: 'wave',
     color: 0xCCCCCC,
