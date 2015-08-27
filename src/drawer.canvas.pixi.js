@@ -231,13 +231,8 @@ WaveSurfer.util.extend(WaveSurfer.Drawer.Canvas, {
     }, this);
 
     var self = this;
-    animate();
-
-    function animate() {
-      self.renderer.render(self.stage)
-      self.renderer2.render(self.stage2)
-      requestAnimationFrame(animate);
-    }
+    self.renderer.render(self.stage)
+    self.renderer2.render(self.stage2)
 
   },
   updateProgress: function (progress) {

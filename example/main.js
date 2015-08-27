@@ -26,6 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
               options.minPxPerSec = 100;
               options.scrollParent = true;
             }
+            
+            options.height = 300
 
             // Init
             wavesurfer.init(options);
