@@ -41,7 +41,7 @@ function render() {
         y += calcY(i, now, offsets[j])
       }
       y += opt.wave.aveHeight
-      for (var j = 0; j < 5; j++) {
+      for (var j = 0; j < amp.count; j++) {
         y *= amp.fold * (calcAmp(i, amp.span, amp.slideX + amp.slideRange * Math.sin(amp.slideSpeed * (j + 1) * now)) - 0.5)
       }
       y = tgt === opt.wave ? y : y * tgt.ratio
